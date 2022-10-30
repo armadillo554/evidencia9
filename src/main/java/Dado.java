@@ -3,8 +3,8 @@ public class Dado {
 	private int caraSuperior;
 
 	public int lanzamiento() {
-		// TODO - implement Dado.lanzamiento
-		throw new UnsupportedOperationException();
+		setCaraSuperior((int)Math.random()*6+1);
+		return caraSuperior;
 	}
 
 	public int getCaraSuperior() {

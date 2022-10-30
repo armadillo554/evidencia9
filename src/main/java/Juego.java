@@ -4,9 +4,12 @@ public class Juego {
 	 * 
 	 * @param resultadoSuma
 	 */
-	public boolean resultado(int resultadoSuma) {
-		// TODO - implement Juego.resultado
-		throw new UnsupportedOperationException();
+	public void resultado(int resultadoSuma) {
+		if (resultadoSuma==7){
+			System.out.println("¡Ganaste!");
+		}else{
+			System.out.println("Has perdido");
+		}
 	}
 
 	/**
@@ -14,8 +17,11 @@ public class Juego {
 	 * @param juego
 	 */
 	public void nuevoJuego(Juego juego) {
-		// TODO - implement Juego.nuevoJuego
-		throw new UnsupportedOperationException();
-	}
+		Dado dado1=new Dado();
+		Dado dado2=new Dado();
+		dado1.lanzamiento();
+		dado2.lanzamiento();
+		resultado(dado1.getCaraSuperior()+dado2.getCaraSuperior());
+		}
 
 }

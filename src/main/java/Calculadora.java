@@ -8,8 +8,8 @@ public class Calculadora {
 	 * @param dado2
 	 */
 	public int sumar(Dado dado1, Dado dado2) {
-		// TODO - implement Calculadora.sumar
-		throw new UnsupportedOperationException();
+		setResultadoSuma(dado1.getCaraSuperior()+dado2.getCaraSuperior());
+		return getResultadoSuma();
 	}
 
 	public int getResultadoSuma() {
@@ -17,7 +17,7 @@ public class Calculadora {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param resultadoSuma
 	 */
 	public void setResultadoSuma(int resultadoSuma) {
